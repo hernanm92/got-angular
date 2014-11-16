@@ -137,7 +137,8 @@ app.controller("MainCtrl", function($scope, $http){ //aca pongo todo lo que se p
 	};
 
 	$scope.crearCasa = function(){
-		var promise = $http.post("/crearCasa?casa=jsonCasa") //solo con el post ya haria el create (por REST)
+		var promise = $http.post('/casas', {nombre:$scope.nombre, patrimonio:$scope.patrimonio, fundada_en:$scope.fundada_en}) //solo con el post ya haria el create (por REST)
+		$scope.inicializar();
 		promise.success(function(response){ //el refresh lo tendria que hacer aca mismo
 			$scope.refresh();
 		});
@@ -147,6 +148,26 @@ app.controller("MainCtrl", function($scope, $http){ //aca pongo todo lo que se p
         $scope.mostrarFuerza = false;
 		$scope.mostrarHeroe = false;
 		$scope.creandoCasa = false;
+		$scope.inicializar();
+	};
+
+	//bind para el create
+	$scope.nombre;
+	$scope.patrimonio;
+	$scope.fundada_en;
+
+	$scope.inicializar = function(){
+		$scope.nombre = "";
+		$scope.patrimonio = "";
+		$scope.fundada_en = "";
+	};
+
+	$scope.eliminarCasa = function(id){
+		var promise = $http.delete("/casas/"+id)
+		console.log("la casa con id " + id + " fue eliminada satisfactoriamente");
+		promise.success(function(response){
+
+		});
 	};
 
 });//el scope no es global

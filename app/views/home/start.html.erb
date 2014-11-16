@@ -31,7 +31,7 @@
 	        		<span class="pull-right">
 						<a href="#info" class="btn btn-success" ng-click="mostrarFuerzas(casa.id)">ver fuerzas</a>
 						<a href="#info" class="btn btn-primary" ng-click="mostrarHeroes(casa.id)">ver heroes</a>
-						<button class="btn btn-danger" data-toggle="modal" data-target="#myModal">delete</button>
+						<button class="btn btn-danger" data-toggle="modal" data-target="#myModal" ng-click="eliminarCasa(casa.id)">delete</button>
 	        		</span>
 				</li>
 			</ul>
@@ -68,20 +68,20 @@
 	<div class="container" ng-show="creandoCasa">
 		<div class="col-md-6 col-md-offset-2">
       	  <h2>Casa</h2>
-      	    <div class="row">
+      	    <!--<div class="row">
       	    	<div class="col-md-4">
 		      	  <h4>Id:</h4>
       	    	</div>
       	    	<div class="col-md-6">
       	    		<input class="form-control">
       	    	</div>
-      	    </div>
+      	    </div>--> <!--el id parece auto generado-->
       	    <div class="row">
       	    	<div class="col-md-4">
 		      	  <h4>Nombre:</h4>
       	    	</div>
       	    	<div class="col-md-6">
-      	    		<input class="form-control">
+      	    		<input class="form-control" ng-model="nombre">
       	    	</div>
       	    </div>
       	    <div class="row">
@@ -89,7 +89,7 @@
 		      	  <h4>Patrimonio:</h4>
       	    	</div>
       	    	<div class="col-md-6">
-      	    		<input class="form-control">
+      	    		<input class="form-control" ng-model="patrimonio">
       	    	</div>
       	    </div>
       	    <div class="row">
@@ -97,7 +97,7 @@
 		      	  <h4>Año de fundacion:</h4>
       	    	</div>
       	    	<div class="col-md-6">
-      	    		<input class="form-control">
+      	    		<input class="form-control" ng-model="fundada_en">
       	    	</div>
       	    </div>
       	    <div class="col-md-10 text-right" style="margin-top: 15px;">

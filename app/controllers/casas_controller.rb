@@ -8,7 +8,7 @@ class CasasController < ApplicationController
   end
 
   def show
-
+    @casa = Casa.find(params[:id]) #where(id: params[:id]) #quiero traerme una casa con un id especifico
   end  
 
   def create
@@ -18,7 +18,7 @@ class CasasController < ApplicationController
   end
 
   def destroy
-    respond_with("true")
+    Casa.destroy(params[:id]) #anda, pero tira internal server error
   end
 
   def casas_params
