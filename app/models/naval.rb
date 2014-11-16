@@ -1,0 +1,3 @@
+class Naval < Fuerza
+
+end

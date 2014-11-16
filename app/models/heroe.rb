@@ -1,0 +1,2 @@
+class Heroe < Fuerza
+end

@@ -1,0 +1,10 @@
+<% flash.each do |name, msg| %>
+  <div class="alert <%= bootstrap_alert_class(name) %> alert-dismissable" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <%= msg %>
+  </div>
+<% end %>
+
+<% if @colonia %>
+  <% render 'shared/resource_error_messages', resource: @colonia %>
+<% end %>

@@ -1,0 +1,8 @@
+<div class="page-header">
+	<ul class="list-inline header-list">
+		<li><h1><%= text %></h1></li>
+    <% if @resource && @resource.persisted? && current_user.can_edit?(@resource) %>
+			<li><h3>- <%= link_to "Editar", edit_url_for(@resource) %></h3></li>
+		<% end %>
+	</ul>
+</div>

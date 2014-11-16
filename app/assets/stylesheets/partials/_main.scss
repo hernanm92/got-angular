@@ -1,0 +1,160 @@
+.nav-tabs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-brand h1 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.navbar-brand h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-collapse { 
+  padding-top: 10px;
+}
+
+.footer { 
+  background-color: $primary;
+  color: $light;
+
+  padding: 20px 0;
+}
+
+.active > a {
+  background-color: $primary !important;
+  color: $light !important;
+}
+
+.header-list { 
+  margin-bottom: 0px;
+}
+
+.page-header {
+  margin-top: 10px;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+.separator-right {
+  border-right: 1px solid $hr-border-color;
+}
+
+.navbar { 
+  a {
+    color: $dark;
+    font-family: $font-family-headings;
+    font-weight: 500;
+    font-size: $font-size-large;
+  }
+
+  border-bottom: 2px solid $primary;
+  @include box-shadow(0.35);
+}
+
+.full-image { 
+  max-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-control {
+  width: 5%;
+}
+
+.logo { 
+  width: 266px;
+}
+
+.navbar {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  padding: 0px 0px;
+}
+
+.active > a {
+  background-color: white !important;
+  color: black !important;
+}
+
+.dropdown-menu {
+  margin-top: 15px;
+}
+
+.logo-name img {
+  width: 50px;
+}
+
+.logo-name h1 {
+  margin-bottom: 0px;
+}
+
+.navbar { 
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-collapse {
+  padding-top: 21px;
+}
+
+.follow i {
+  font-size: 3em;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+.contact-info p {
+  font-size: 1.2em;
+}
+
+.inline-container {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.destroy-link {
+  position: absolute;
+  color: $dark;
+  top: 0px;
+  right: 0px;
+ 
+}
+
+.destroy-link i {
+  font-size: 2em; 
+}
+
+.menu-divider {
+  border-right: 1px solid $dark;
+}
+
+.well-cta {
+  border-color: $fourth;
+  background-color: lighten($fourth,15);
+}
+
+.well-cta hr {
+  border-color: $fourth;
+}
+
+.query-form {
+  padding: 20px 0px 10px 0px;
+}
+
+.table.table-striped {
+  margin-top: 40px;
+}

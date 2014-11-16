@@ -1,0 +1,13 @@
+.landing-message {
+  position: absolute;
+  bottom: 100px;
+  left: 10%;
+  color: $light;
+  background-color: transparentize($dark, 0.2);
+  border-radius: 5px;
+
+  h1 {
+    font-size: 3.5em;
+    margin-top: 10px;
+  }
+}

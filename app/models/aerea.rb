@@ -1,0 +1,2 @@
+class Aerea < Fuerza
+end
