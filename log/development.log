@@ -8906,3 +8906,1312 @@ ActionController::RoutingError (No route matches [GET] "/vendor/assets/boostrap/
   Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
   Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
   Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 12:44:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (3.9ms)
+  Rendered shared/_menu.html.erb (1.3ms)
+  Rendered shared/_nav.html.erb (78.2ms)
+  Rendered shared/_alert_messages.html.erb (108.8ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 1176ms (Views: 1175.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+
+Started GET "/vendor/assets/boostrap/dist/js/boootstrap.js" for 127.0.0.1 at 2014-11-16 12:44:22 -0300
+
+ActionController::RoutingError (No route matches [GET] "/vendor/assets/boostrap/dist/js/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (108.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (367.4ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 12:44:24 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (4.6ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (37.6ms)
+Completed 200 OK in 1119ms (Views: 62.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 12:44:29 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (0.6ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (8.2ms)
+Completed 200 OK in 1018ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroes.json?casa=2" for 127.0.0.1 at 2014-11-16 12:44:35 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"2"}
+  [1m[35mHeroe Load (0.9ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 2
+  [1m[36mCasa Load (0.5ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (3.1ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered heroes/index.json.jbuilder (138.6ms)
+Completed 200 OK in 227ms (Views: 147.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/fuerzas.json?casa=11" for 127.0.0.1 at 2014-11-16 12:44:44 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"11"}
+  [1m[36mFuerza Load (0.5ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 11[0m
+  Rendered fuerzas/index.json.jbuilder (10.1ms)
+Completed 200 OK in 65ms (Views: 57.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroes.json?casa=10" for 127.0.0.1 at 2014-11-16 12:44:49 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"10"}
+  [1m[35mHeroe Load (0.6ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 10
+  [1m[36mCasa Load (0.2ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered heroes/index.json.jbuilder (20.6ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/fuerzas.json?casa=7" for 127.0.0.1 at 2014-11-16 12:45:05 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"7"}
+  [1m[36mFuerza Load (11.0ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 7[0m
+  [1m[35mCasa Load (0.3ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered fuerzas/index.json.jbuilder (231.9ms)
+Completed 200 OK in 244ms (Views: 231.2ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/heroes.json?casa=7" for 127.0.0.1 at 2014-11-16 12:45:10 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"7"}
+  [1m[35mHeroe Load (0.6ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 7
+  [1m[36mCasa Load (0.2ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered heroes/index.json.jbuilder (60.9ms)
+Completed 200 OK in 76ms (Views: 73.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 12:59:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (4.7ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (87.7ms)
+Completed 200 OK in 1207ms (Views: 192.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/fuerzas.json?casa=1" for 127.0.0.1 at 2014-11-16 13:00:25 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"1"}
+  [1m[36mFuerza Load (4.9ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 1[0m
+  [1m[35mCasa Load (0.5ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered fuerzas/index.json.jbuilder (244.5ms)
+Completed 200 OK in 419ms (Views: 300.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:03:53 -0300
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:03:54 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (52.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (230.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:08:44 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 613ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.js )` to `config/initializers/assets.rb` and restart your server):
+     6:   <title>Game Of Thrones Search</title>
+     7:   <%= stylesheet_link_tag 'application', media: 'all' %>
+     8:   <%= javascript_include_tag 'application' %>
+     9:   <%= javascript_include_tag 'bootstrap' %>
+    10:   <%= csrf_meta_tags %>
+    11: </head>
+    12: 
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___631796175__587836708'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (51.6ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:09:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 347ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.js )` to `config/initializers/assets.rb` and restart your server):
+     6:   <title>Game Of Thrones Search</title>
+     7:   <%= stylesheet_link_tag 'application', media: 'all' %>
+     8:   <%= javascript_include_tag 'application' %>
+     9:   <%= javascript_include_tag 'bootstrap' %>
+    10:   <%= csrf_meta_tags %>
+    11: </head>
+    12: 
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__868558254__586486508'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (74.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (128.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:11:58 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (5.1ms)
+  Rendered shared/_menu.html.erb (1.2ms)
+  Rendered shared/_nav.html.erb (6.3ms)
+  Rendered shared/_alert_messages.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 236ms (Views: 235.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:11:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:11:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:11:59 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:11:59 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-16 13:11:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:12:00 -0300
+
+
+Started GET "/home/utnso/got-angular/vendor/assets/boostrap/dist/js/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:12:00 -0300
+
+ActionController::RoutingError (No route matches [GET] "/home/utnso/got-angular/vendor/assets/boostrap/dist/js/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.5ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.6ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:12:01 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (0.7ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (37.9ms)
+Completed 200 OK in 1090ms (Views: 49.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:12:02 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:20:41 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (0.1ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (2.9ms)
+  Rendered shared/_alert_messages.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 355ms (Views: 353.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:20:42 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:20:42 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:20:42 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:20:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:20:42 -0300
+
+
+Started GET "/home/utnso/got-angular/vendor/assets/boostrap/dist/js/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:20:43 -0300
+
+ActionController::RoutingError (No route matches [GET] "/home/utnso/got-angular/vendor/assets/boostrap/dist/js/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (226.1ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:20:44 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (0.6ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (7.0ms)
+Completed 200 OK in 1020ms (Views: 15.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:20:46 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:21:18 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (1.1ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (2.8ms)
+  Rendered shared/_alert_messages.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 165ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:21:18 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:21:18 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:21:18 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:21:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:21:19 -0300
+
+
+Started GET "/vendor/assets/boostrap/dist/js/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:21:19 -0300
+
+ActionController::RoutingError (No route matches [GET] "/vendor/assets/boostrap/dist/js/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.4ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (330.8ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:21:20 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (0.7ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (6.9ms)
+Completed 200 OK in 1020ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:21:21 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:23:11 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (1.2ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (3.7ms)
+  Rendered shared/_alert_messages.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 162ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:23:12 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (40.6ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (349.4ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:23:14 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (0.7ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (6.3ms)
+Completed 200 OK in 1014ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.5ms)
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:23:25 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:32:29 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (1.0ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (3.8ms)
+  Rendered shared/_alert_messages.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 274ms (Views: 273.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:32:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:32:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:32:30 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:32:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:32:30 -0300
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:32:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (43.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (286.8ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:32:32 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (0.7ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (5.2ms)
+Completed 200 OK in 1015ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:32:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.1ms)
+
+
+Started GET "/fuerzas.json?casa=2" for 127.0.0.1 at 2014-11-16 13:32:36 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"2"}
+  [1m[36mFuerza Load (5.8ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 2[0m
+  [1m[35mCasa Load (0.6ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered fuerzas/index.json.jbuilder (426.6ms)
+Completed 200 OK in 472ms (Views: 436.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:33:08 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (0.1ms)
+  Rendered shared/_menu.html.erb (0.1ms)
+  Rendered shared/_nav.html.erb (5.0ms)
+  Rendered shared/_alert_messages.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 220ms (Views: 219.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:33:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:09 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:09 -0300
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:33:09 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.6ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.8ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:33:11 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (0.6ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (6.7ms)
+Completed 200 OK in 1017ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:33:12 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.8ms)
+
+
+Started GET "/fuerzas.json?casa=2" for 127.0.0.1 at 2014-11-16 13:33:14 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"2"}
+  [1m[35mFuerza Load (0.6ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 2
+  [1m[36mCasa Load (0.5ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered fuerzas/index.json.jbuilder (123.2ms)
+Completed 200 OK in 130ms (Views: 127.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (1.1ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (3.4ms)
+  Rendered shared/_alert_messages.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:33:37 -0300
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:33:38 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (265.9ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:33:39 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (0.5ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (7.1ms)
+Completed 200 OK in 1015ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:33:40 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.4ms)
+
+
+Started GET "/fuerzas.json?casa=2" for 127.0.0.1 at 2014-11-16 13:33:43 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"2"}
+  [1m[36mFuerza Load (14.3ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 2[0m
+  [1m[35mCasa Load (0.3ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered fuerzas/index.json.jbuilder (104.2ms)
+Completed 200 OK in 141ms (Views: 123.3ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/fuerzas.json?casa=11" for 127.0.0.1 at 2014-11-16 13:33:48 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"11"}
+  [1m[36mFuerza Load (0.7ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 11[0m
+  Rendered fuerzas/index.json.jbuilder (24.6ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroes.json?casa=11" for 127.0.0.1 at 2014-11-16 13:33:52 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"11"}
+  [1m[35mHeroe Load (6.8ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 11
+  Rendered heroes/index.json.jbuilder (12.4ms)
+Completed 200 OK in 58ms (Views: 46.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+Processing by HomeController#start as HTML
+  Rendered home/start.html.erb within layouts/application (1.8ms)
+  Rendered shared/_menu.html.erb (0.2ms)
+  Rendered shared/_nav.html.erb (3.7ms)
+  Rendered shared/_alert_messages.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 188ms (Views: 186.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+
+
+Started GET "/assets/javascript/boootstrap.js" for 127.0.0.1 at 2014-11-16 13:34:59 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascript/boootstrap.js"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (474.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (682.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-16 13:35:00 -0300
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 13:35:01 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (1.3ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (7.9ms)
+Completed 200 OK in 1017ms (Views: 13.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/angular.min.js.map" for 127.0.0.1 at 2014-11-16 13:35:02 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/angular.min.js.map"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.1ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.3ms)
+
+
+Started GET "/heroes.json?casa=1" for 127.0.0.1 at 2014-11-16 13:35:04 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"1"}
+  [1m[35mHeroe Load (0.8ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 1
+  [1m[36mCasa Load (0.2ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered heroes/index.json.jbuilder (68.3ms)
+Completed 200 OK in 98ms (Views: 95.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/heroes.json?casa=11" for 127.0.0.1 at 2014-11-16 13:35:09 -0300
+Processing by HeroesController#index as JSON
+  Parameters: {"casa"=>"11"}
+  [1m[36mHeroe Load (0.6ms)[0m  [1mSELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Heroe') AND "fuerzas"."casa_id" = 11[0m
+  Rendered heroes/index.json.jbuilder (10.9ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 14:17:43 -0300
+Processing by CasasController#index as JSON
+  [1m[35mCasa Load (0.6ms)[0m  SELECT "casas".* FROM "casas"
+  Rendered casas/index.json.jbuilder (11.8ms)
+Completed 200 OK in 1024ms (Views: 17.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/casas.json" for 127.0.0.1 at 2014-11-16 14:19:31 -0300
+Processing by CasasController#index as JSON
+  [1m[36mCasa Load (0.5ms)[0m  [1mSELECT "casas".* FROM "casas"[0m
+  Rendered casas/index.json.jbuilder (4.1ms)
+Completed 200 OK in 1009ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/casas/11" for 127.0.0.1 at 2014-11-16 14:21:04 -0300
+
+ActionController::RoutingError (No route matches [DELETE] "/casas/11"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.5ms)
+
+
+Started DELETE "/casas/11" for 127.0.0.1 at 2014-11-16 14:22:16 -0300
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for CasasController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.0ms)
+
+
+Started DELETE "/casas/11" for 127.0.0.1 at 2014-11-16 14:23:26 -0300
+Processing by CasasController#destroy as */*
+  Parameters: {"id"=>"11", "casa"=>{}}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `model_name' for TrueClass:Class):
+  app/controllers/casas_controller.rb:21:in `destroy'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.2ms)
+
+
+Started DELETE "/casas/11" for 127.0.0.1 at 2014-11-16 14:23:56 -0300
+Processing by CasasController#destroy as */*
+  Parameters: {"id"=>"11", "casa"=>{}}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 41ms
+
+NoMethodError (undefined method `true_url' for #<CasasController:0xba27346c>):
+  app/controllers/casas_controller.rb:21:in `destroy'
+
+
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (71.6ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.5ms)
+  Rendered /home/utnso/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (152.0ms)
+
+
+Started GET "/fuerzas.json?casa=2" for 127.0.0.1 at 2014-11-16 14:32:46 -0300
+Processing by FuerzasController#index as JSON
+  Parameters: {"casa"=>"2"}
+  [1m[35mFuerza Load (0.3ms)[0m  SELECT "fuerzas".* FROM "fuerzas"  WHERE "fuerzas"."type" IN ('Aerea', 'Naval', 'Terrestre') AND "fuerzas"."casa_id" = 2
+  [1m[36mCasa Load (0.4ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "casas".* FROM "casas"  WHERE "casas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered fuerzas/index.json.jbuilder (267.0ms)
+Completed 200 OK in 294ms (Views: 286.4ms | ActiveRecord: 1.9ms)

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="../../../vendor/assets/boostrap/dist/js/boootstrap.js"></script>
+<script type="text/javascript" src="/assets/javascript/boootstrap.js"></script>
 
 <!--hay que especificarle el controller-->
 <div id="inicio" ng-controller="MainCtrl"> 
@@ -42,7 +42,7 @@
 				<span class="pull-right">
 					<a href="#top" class="btn btn-success" ng-click="ocultar()">ocultar</a>
 				</span>
-				<h1>Fuerzas de <strong>{{fuerzas[0].casa}}</strong></h1> <!--sacar esto del array-->
+				<h1>Fuerzas de <strong>{{casa.nombre}}</strong></h1> <!--sacar esto del array-->
 				<ul class="list-group">
 					<li class="list-group-item col-md-6" ng-repeat="fuerza in fuerzas">
 						{{fuerza.tipo}} 
@@ -54,7 +54,7 @@
 				<span class="pull-right">
 					<a href="#top" class="btn btn-success" ng-click="ocultar()">ocultar</a>
 				</span>
-				<h1>Heroes de <strong>{{heroes[0].casa}}</strong></h1>
+				<h1>Heroes de <strong>{{casa.nombre}}</strong></h1>
 				<ul class="list-group">
 					<li class="list-group-item col-md-6" ng-repeat="heroe in heroes">
 						{{heroe.nombre}} 

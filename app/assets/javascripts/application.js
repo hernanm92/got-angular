@@ -94,6 +94,11 @@ app.controller("MainCtrl", function($scope, $http){ //aca pongo todo lo que se p
 			$scope.mostrarFuerza = true;
 			$scope.mostrarHeroe = false;
 			$scope.fuerzas = response.fuerzas.map(traerFuerza);
+			angular.forEach($scope.casas, function(casa) {
+			  if (casa.id == id) {
+				$scope.casa = casa;
+			  };
+			});
 		});
 		promise.error(function(){
 			alert("no anduvo");
@@ -115,6 +120,11 @@ app.controller("MainCtrl", function($scope, $http){ //aca pongo todo lo que se p
 			$scope.mostrarHeroe = true;
 			$scope.mostrarFuerza = false;
 			$scope.heroes = response.heroes;
+			angular.forEach($scope.casas, function(casa) {
+			  if (casa.id == id) {
+				$scope.casa = casa;
+			  };
+			});
 		});
 		promise.error(function(){
 			alert("no anduvo");

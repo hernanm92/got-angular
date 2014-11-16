@@ -17,6 +17,10 @@ class CasasController < ApplicationController
     respond_with(@casa)
   end
 
+  def destroy
+    respond_with("true")
+  end
+
   def casas_params
     params.require(:casa).permit(
       :nombre,
